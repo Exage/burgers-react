@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy-Semibold.ttf');
+
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./assets/fonts/Merriweather-Black.ttf');
+}
+
+body {
+    background-color: #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: #fff;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+
+    min-width: 260px;
+
+    color: #191411;
+    background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+    
+    border-radius: 8px;
+    padding: 19px 50px;
+}
+
+.btn:hover {
+    background: linear-gradient(96deg, #AC6115 0%, #9E7A19 100%);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background: #757575;
+}
